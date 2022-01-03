@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            border-bottom: 2px solid black;
+            width: fit-content;
+            margin: auto;
+            padding: 8px;
+            text-shadow: 0px 1px 1px #ddd, 0px 2px 1px #d6d6d6
+        }
+
+        .container {
+            padding: 16px;
+            width: 500px;
+            display: block;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 7);
+
+        }
+
+        form {
+            display: block;
+            padding-top: 20px;
+            margin: auto;
+        }
+
+        body {
+            font-family: 'Righteous', cursive;
+            background-color: #FD7014;
+        }
+
+        input {
+            font-family: 'Righteous', cursive;
+            border: none;
+            text-shadow: 0px 1px 1px #ddd;
+        }
+
+        form option {
+            font-family: 'Righteous', cursive;
+            background-color: #ddd;
+            color: black;
+        }
+
+        .baba {
+            font-size: xx-large;
+            display: block;
+            width: fit-content;
+            margin: auto;
+            line-height: 110%;
+            font-family: 'Righteous', cursive;
+            text-shadow: 0px 1px 1px #ddd;
+            /* padding-top: 30px; */
+        }
+
+        .babas {
+            font-size: xx-large;
+            display: block;
+            width: fit-content;
+            margin: auto;
+            line-height: 110%;
+            font-family: 'Righteous', cursive;
+            text-shadow: 0px 1px 1px #ddd;
+            padding-top: 30px;
+        }
+
+        .cent {
+            text-align: center;
+            line-height: 35%;
+            text-decoration: underline;
+            text-shadow: 0px 1px 1px #ddd, 0px 2px 1px #d6d6d6
+        }
+
+        input[type='text'],
+        input[type='number'],
+        input[type='email'],
+        input[type='date'],
+        #dc,
+        #sem {
+            font-family: 'Righteous', cursive;
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0px 22px 0px;
+            display: inline-block;
+            border: none;
+            background-color: whitesmoke;
+        }
+
+        input[type='text']:focus,
+        input[type='number']:focus,
+        input[type='email']:focus,
+        input[type='date']:focus {
+            outline: none;
+            background-color: #ddd;
+        }
+
+        #dc {
+            display: block;
+            outline: none;
+        }
+
+        #sem {
+            display: block;
+            outline: none;
+        }
+
+        #mynumber {
+            display: block;
+        }
+
+        sup {
+            color: red;
+        }
+
+        .sub {
+            color: black;
+            position: absolute;
+            background-color: #FD7014;
+            margin: 0px 290px;
+            padding: 6px;
+            cursor: pointer;
+            opacity: 1.8;
+        }
+
+        .res {
+            color: black;
+            background-color: #FD7014;
+            margin: 0px 5px;
+            padding: 6px;
+            cursor: pointer;
+            opacity: 1.8;
+        }
+/* 
+        a {
+            position: absolute;
+            bottom: -85%;
+            right: 10px;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <p class="babas">बाबासाहेब भीमराव अम्बेडकर विश्वविद्यालय </p>
+    <p class="baba">BABASAHEB BHIMRAO AMBEDKER UNIVERSITY</p>
+    <p class="cent">( A CENTRAL UNIVERSITY )</p>
+
+    <p class="cent">ACCREDITED 'A' GRADE BY NAAC 2015</p>
+    <p class="cent">ISO 14001:2015 </p>
+    <hr>
+    <h1>Attendance Record of Department of Computer Science</h1>
+
+    <form action="">
+        <div class="container">
+            <label for="mystudent">Name of Student <sup>*</sup></label>
+            <div>
+
+                <input type="text" name="MyStudent" id="mystudent" placeholder="Name of Student" required>
+            </div>
+
+
+            <label for="myrollnum">Roll Number <sup>*</sup></label>
+            <div>
+                <input type="number" name="MyRollNum" id="myrollnum" placeholder="Roll Number" required>
+            </div>
+
+
+            <label for="mydepartment">Department <sup>*</sup></label>
+            <div>
+                <input type="text" name="MyDepartment" id="mydepartment" placeholder="Department" required>
+            </div>
+
+
+            <label for="mycourse">Course</label>
+            <select name="Department_Course" id="dc">
+                <option value="phd">Ph.d</option>
+                <option value="bsc">B.Ca</option>
+                <option value="mca" selected>Mca</option>
+                <option value="mtech">M.Tech</option>
+                <option value="btech">B.tech</option>
+            </select>
+
+
+
+            <label for="mysemester">Semester</label>
+            <select name="semester" id="sem">
+                <option value="firstsem" selected>First Semester</option>
+                <option value="secondsem">Second Semester</option>
+                <option value="thirdsem">Third Semester</option>
+                <option value="forthsem">Forth Semester</option>
+                <option value="fifthsem">Fifth Semester</option>
+                <option value="sixthsem">Six Semester</option>
+            </select>
+
+
+
+            <label for="mynumber">Contact Number <sup>*</sup></label>
+            <div>
+                <input type="number" name="MySemester" id="mynumber" placeholder="Contact Number" required>
+            </div>
+
+
+            <label for="myemail">Email <sup>*</sup></label>
+            <div>
+                <input type="email" name="MyEmail" id="myemail" placeholder="Email" required>
+            </div>
+
+            <label for="mydate">Date <sup>*</sup></label>
+            <div>
+                <input type="date" name="MyDate" id="mydate" placeholder="Date" required>
+            </div>
+            <hr>
+            <!-- <button type="submit" class="btn">Submit</button>
+            <button type="reset" class="btn1">Clear</button> -->
+            <input type="reset" value="Reset Now" class="res">
+            <input type="submit" value="Submit Now" class="sub">
+        </div>
+    </form>
+    <a href="https://www.bbau.ac.in/" target="_blank">Go to official website</a>
+</body>
+
+</html>
